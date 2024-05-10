@@ -1,0 +1,92 @@
+body {
+    font-family: 'Brush Script MT', cursive;
+    background-color: #ffcccc;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+  }
+  
+  .album {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .album img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .album .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .album .left-arrow {
+    left: 20px;
+  }
+  
+  .album .right-arrow {
+    right: 20px;
+  }
+  
+  .album .arrow:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .heart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+  }
